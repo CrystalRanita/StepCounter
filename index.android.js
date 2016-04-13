@@ -4,7 +4,7 @@
  */
 import Button from './src/component/Button';
 
-var StdToastAndroid = require('./lib/components/StdToastAndroid/StdToast.android.js')
+var AdaptivCapture = require('./lib/components/AdaptivAndroid/AdaptivCapture.android.js')
 
 import React, {
   AppRegistry,
@@ -16,13 +16,23 @@ import React, {
 
 class StepCounter extends Component {
   render() {
+    var width = 0
+    var height = 0
     return (
       <View style={styles.containerMain}>
           <Text style={styles.textTitle}>{"Adaptiv"}</Text>
           <Text style={styles.textSubitem}>{"Average Pace"}</Text>
           <Text style={styles.textSubitem}>{"Distance"}</Text>
 
-          <Button text="Get Sensor Data" clickBtnEvent={() => {StdToastAndroid.show('HiHi', StdToastAndroid.LONG)}}/>
+          <Button text="Get Sensor Data" clickBtnEvent={() => {
+              AdaptivCapture.show(
+                  width,
+                  height,
+                  (width, height) => {
+                      alert('result' +  width +  height);
+                  }
+              )
+          }}/>
       </View>
     );
   }

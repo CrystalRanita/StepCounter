@@ -2,60 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.23.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="02f58fb4e333f5f258eedc4d1bc66032059aaf70">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-9d4de5b738d49fb4d181622ecdb3b2602495aa57.jar" />
-    </item>
-    <item
-        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/okio-1.6.0-4a6d3078dddb689bad0a54686f183624ccb6e363.jar" />
-    </item>
-    <item
-        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.8.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="3836ecca4e31e18ea8fbae8e822d49777b0db4f7">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-3a9cff840566ca01cf3c936c7135544d947d194a.jar" />
-    </item>
-    <item
-        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.8.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="4af24c040b21980e0a80a505816c648e36705bd9">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-ea79585342d8cee7acfaa2bac63e2108a0ddbbc6.jar" />
-    </item>
-    <item
-        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-ws/2.5.0/e9753b7dcae5deca92e871c5c759067070b07bc/okhttp-ws-2.5.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="0e9753b7dcae5deca92e871c5c759067070b07bc">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-2.5.0-c7347f4800439fc277f00c9ef0223c35c696cd21.jar" />
-    </item>
-    <item
         jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/0.8.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="845a5b3a624946b2068963ba656c117fc453701c">
         <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-5ce55ff7ef8f46ec7d0dbd24eba1d87d35119a3c.jar" />
-    </item>
-    <item
-        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-20d4b966c207081ec3d72050dae1d67c8dddfa3b.jar" />
-    </item>
-    <item
-        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-a251b7895576dc803b1990684084afcc0c3c065d.jar" />
     </item>
     <item
         jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho/1.2.0/1d6cdb8ce8185b8b23213fad48a83987fb6d2d67/stetho-1.2.0.jar"
@@ -65,11 +16,39 @@
         <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/stetho-1.2.0-44b4965297cba40b55bd9284954e773a5f807f67.jar" />
     </item>
     <item
-        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho-okhttp/1.2.0/6c5c9380e245c4ff5be2b2a49dcbb0200c39798e/stetho-okhttp-1.2.0.jar"
+        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="6c5c9380e245c4ff5be2b2a49dcbb0200c39798e">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/stetho-okhttp-1.2.0-26136ded9b6e1ebdb0b705c2130a76f0dd44942a.jar" />
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-c4bbc010900961894f9a04c498567454cb6b206b.jar" />
+    </item>
+    <item
+        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.23.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="02f58fb4e333f5f258eedc4d1bc66032059aaf70">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-9d4de5b738d49fb4d181622ecdb3b2602495aa57.jar" />
+    </item>
+    <item
+        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/okhttp-2.5.0-98f4df8cf584c1276669c211d092d71fecd151d6.jar" />
+    </item>
+    <item
+        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4af24c040b21980e0a80a505816c648e36705bd9">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-ea79585342d8cee7acfaa2bac63e2108a0ddbbc6.jar" />
+    </item>
+    <item
+        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/0.8.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="3836ecca4e31e18ea8fbae8e822d49777b0db4f7">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-3a9cff840566ca01cf3c936c7135544d947d194a.jar" />
     </item>
     <item
         jar="/opt/android-sdk-linux/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
@@ -79,6 +58,34 @@
         <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-cfadd2d00992f445c24a2740af1f818d70a64eeb.jar" />
     </item>
     <item
+        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho-okhttp/1.2.0/6c5c9380e245c4ff5be2b2a49dcbb0200c39798e/stetho-okhttp-1.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="6c5c9380e245c4ff5be2b2a49dcbb0200c39798e">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/stetho-okhttp-1.2.0-26136ded9b6e1ebdb0b705c2130a76f0dd44942a.jar" />
+    </item>
+    <item
+        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-a251b7895576dc803b1990684084afcc0c3c065d.jar" />
+    </item>
+    <item
+        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/jackson-core-2.2.3-20d4b966c207081ec3d72050dae1d67c8dddfa3b.jar" />
+    </item>
+    <item
+        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/okio-1.6.0-4a6d3078dddb689bad0a54686f183624ccb6e363.jar" />
+    </item>
+    <item
         jar="/home/crystal/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -86,11 +93,11 @@
         <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/commons-cli-1.2-3aa51b2cc7a084c9b58a2ee3be279c07284678ca.jar" />
     </item>
     <item
-        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.23.1/jars/libs/infer-annotations-1.5.jar"
+        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-ws/2.5.0/e9753b7dcae5deca92e871c5c759067070b07bc/okhttp-ws-2.5.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="60e1da2c40a60ff372052eba4278e0cb252a3f3a">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-0ffe1f939936d05b3e227532741f871e566348aa.jar" />
+        sha1="0e9753b7dcae5deca92e871c5c759067070b07bc">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-2.5.0-c7347f4800439fc277f00c9ef0223c35c696cd21.jar" />
     </item>
     <item
         jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/0.8.1/jars/classes.jar"
@@ -100,32 +107,11 @@
         <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-ed5df1168e8969cc229de7be29cdcb80e406a303.jar" />
     </item>
     <item
-        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-8c95c2aece688583bc240459824b92a4b268a28f.jar" />
-    </item>
-    <item
-        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-f3ae1ba6065831e795efe53040ef230b7d6aaf12.jar" />
-    </item>
-    <item
-        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="129874135e6081269ace2312092031558865de12">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-0aa48e570908631452b5636e8487141d3618c75b.jar" />
-    </item>
-    <item
-        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0-c4bbc010900961894f9a04c498567454cb6b206b.jar" />
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-a1f0044435e34709f7f15860ac695c5de42cb06e.jar" />
     </item>
     <item
         jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp/0.8.1/jars/classes.jar"
@@ -142,18 +128,32 @@
         <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/library-2.4.0-4b0ddbe1ab59d6cc2f913d6c3d51b3d097220f2d.jar" />
     </item>
     <item
-        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/okhttp-2.5.0-98f4df8cf584c1276669c211d092d71fecd151d6.jar" />
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-f3ae1ba6065831e795efe53040ef230b7d6aaf12.jar" />
     </item>
     <item
-        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.23.1/jars/libs/infer-annotations-1.5.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
-        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-a1f0044435e34709f7f15860ac695c5de42cb06e.jar" />
+        sha1="60e1da2c40a60ff372052eba4278e0cb252a3f3a">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5-0ffe1f939936d05b3e227532741f871e566348aa.jar" />
+    </item>
+    <item
+        jar="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/classes-8c95c2aece688583bc240459824b92a4b268a28f.jar" />
+    </item>
+    <item
+        jar="/home/crystal/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.4/129874135e6081269ace2312092031558865de12/bolts-android-1.1.4.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="129874135e6081269ace2312092031558865de12">
+        <dex dex="/home/crystal/workdir/react_native/step_counter/StepCounter/android/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.4-0aa48e570908631452b5636e8487141d3618c75b.jar" />
     </item>
 
 </items>
