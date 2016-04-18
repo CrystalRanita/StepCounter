@@ -7,6 +7,7 @@ import com.fb.react.modules.toast.*;
 import com.fb.react.shell.*;
 import com.react.modules.adaptiv.*;
 import com.react.shell.*;
+import com.oblador.vectoricons.VectorIconsPackage;
 
 import java.util.Arrays;
 import java.util.List;
@@ -40,6 +41,7 @@ public class MainActivity extends ReactActivity {
         return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
             new BasicReactPackage(),
-            new DefReactPackage());
+            new DefReactPackage(),
+            new VectorIconsPackage());
     }
 }
