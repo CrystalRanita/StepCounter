@@ -50,7 +50,7 @@ export default class C_Navigation extends Component {
             <Drawer theme='light'>
                 <Drawer.Header image={<Image source={require('./../img/mickey.png')} />}>
                     <View style={styles.header}>
-                        <Avatar size={80} image={<Image source={{uri: "http://facebook.github.io/react-native/img/opengraph.png?2" }}/>} />
+                        <Avatar size={80} image={<Image source={require('./../img/frog.png')} />} />
                         <Text style={[styles.text, COLOR.paperGrey50, TYPO.paperFontSubhead]}>Options List</Text>
                     </View>
                 </Drawer.Header>

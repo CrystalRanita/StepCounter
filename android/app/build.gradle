@@ -1,7 +1,12 @@
 apply plugin: "com.android.application"
 
 import com.android.build.OutputFile
+import com.android.ddmlib.DdmPreferences
+import java.util.concurrent.TimeUnit
 
+final int ADB_TIMEOUT = TimeUnit.MINUTES.toMillis(5)
+DdmPreferences.setTimeOut(ADB_TIMEOUT)
+println "Device timeout is ${DdmPreferences.getTimeOut()}ms"
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
  * and bundleReleaseJsAndAssets).
@@ -116,6 +121,9 @@ android {
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
         }
+    }
+    adbOptions {
+        timeOutInMs 60000 // set timeout to 1 minute
     }
 }
 
