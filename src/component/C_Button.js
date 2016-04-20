@@ -16,12 +16,12 @@ export default class C_Button extends Component {
     this.state = {disabled: false};
   }
   
-  AlertEvent = () => {
+onPress = () => {
     console.log(1);
-    const {clickBtnEvent} = this.props;
+    const {onPress} = this.props;
     this.disable();
-    clickBtnEvent(this.enable); // asyncnonus
-    //this.enable();
+    onPress(this.enable()); // asyncnonus. Notice: must be this.enable() not this.enable, otherwise enable function does not works.
+    //this.enable();// asyncnonus, cannot write enabled code like this
   };
   enable = () => {
     console.log(4);
@@ -44,7 +44,7 @@ export default class C_Button extends Component {
           disabled={this.state.disabled}
           style={[styles.button, this.state.disabled && styles.disabled]}
           /*self-define function myfunction = () => {}*/
-          onPress={this.AlertEvent}
+          onPress={this.onPress}
         >
           <Text style={styles.buttonText}>{this.props.text}</Text>
         </TouchableOpacity>
