@@ -2,12 +2,9 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-import C_Button from './src/component/C_Button';
 import C_Navigation from './src/component/C_Navigation';
 import C_ToolbarAndroid from './src/component/C_ToolbarAndroid';
 import P_PageControl from './src/component/P_PageControl';
-
-var AdaptivCapture = require('./lib/components/AdaptivAndroid/AdaptivCapture.android.js')
 
 import React, {
   AppRegistry,
@@ -47,8 +44,6 @@ class StepCounter extends Component {
     };
 
     render() {
-      var width = 0
-      var height = 0
       const {drawer, navigator} = this.state;
       const navView = React.createElement(C_Navigation);
 
@@ -75,15 +70,6 @@ class StepCounter extends Component {
               <View style={styles.containerMain}>
                   <C_ToolbarAndroid></C_ToolbarAndroid>
                   <P_PageControl></P_PageControl>
-                  <C_Button text="Pass Data Test" onPress={() => {
-                      AdaptivCapture.show(
-                          width,
-                          height,
-                          (width, height) => {
-                              alert('result' +  width +  height);
-                          }
-                      )
-                  }}/>
               </View>
           </DrawerLayoutAndroid>
       );
@@ -93,7 +79,7 @@ class StepCounter extends Component {
 const styles = StyleSheet.create({
     containerMain: {
       flex: 1,
-      backgroundColor: '#afeeee',
+      backgroundColor: 'lightyellow',
     },
     textTitle:{
       fontSize: 40,

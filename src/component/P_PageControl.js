@@ -13,11 +13,15 @@ import React, {
 
 var { RouteNavigator, Router } = require('react-native-route-navigator');
 
+var ROUTE_STACK = [
+  {name: 'P_StartPage', component: P_StartPageComponent, index: 0},
+]
+
 export default class P_PageControl extends Component {
   render() {
     return (
       <RouteNavigator style={styles.container}
-          initialRouteStack={['/P_StartPage/my-id-string']}
+          initialRouteStack={ROUTE_STACK}
                      router={this.router}
                         app={this}
       />

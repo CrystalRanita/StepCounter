@@ -12,50 +12,61 @@ import React, {
     Component,
 } from 'react-native';
 
+var IMG_LIST = [
+    require('./../img/speech-balloon-orange-x-icon.png'), //Alphabet X
+    require('./../img/speech-balloon-orange-y-icon.png'), //Alphabet Y
+    require('./../img/speech-balloon-orange-z-icon.png'), //Alphabet Z
+];
+
 export default class C_ListView extends Component {
-    constructor(props) {
+    constructor(props){
         super(props);
         var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
         this.state = {
-            dataSource: ds.cloneWithRows(['row 1', 'row 2']),
+            dataSource: ds.cloneWithRows(['0.0', '0.0','0.0','Our Steps: 0.0','GPS StatusNo Connection']),
         };
     }
 
-    render() {
-      return (
-          <ListView
-              dataSource={this.state.dataSource}
-              renderRow={(rowData) => <Text>{rowData}</Text>}
-          />
-      );
-    }
-
-    _renderRows(rowData: string, sectionID: number, rowID: number) {
-        var rowHash = Math.abs(hashCode(rowData));
-        var imgSource = {
-            uri: THUMB_URLS[rowHash % THUMB_URLS.length],
-        };
+    _renderRow(rowData: string, sectionID: number, rowID: number) {
+        var rowImg = IMG_LIST[rowID];
         return (
-            <TouchableHighlight onPress={() => this._pressRow(rowID)}>
+            <TouchableHighlight>
                 <View>
-                    <View style={styles.row}>
-                        <Image style={styles.thumb} source={imgSource} />
-                        <Text style={styles.text}>
-                            {rowData + ' - ' + LOREM_IPSUM.substr(0, rowHash % 301 + 10)}
+                    <View style={styles.rowViewStyle}>
+                        <Image style={styles.rowImgStyle} source={rowImg} />
+                        <Text style={styles.rowTextStyle}>
+                            {rowData}
                         </Text>
                     </View>
-                    <View style={styles.separator} />
                 </View>
             </TouchableHighlight>
         );
     }
 
-    _genRows(pressData: {[key: number]: boolean}): Array<string> {
-        var dataBlob = [];
-        for (var i = 0; i<100; i++) {
-            var pressedText = pressData[i] ? ' (pressed)' : '';
-            dataBlob.push('Row' + i + pressedText);
-        }
-        return dataBlob;
+    render() {
+        return (
+            <ListView
+              dataSource={this.state.dataSource}
+              renderRow={this._renderRow}
+            />
+        );
     }
 }
+
+const styles = StyleSheet.create({
+    rowViewStyle: {
+        position: 'relative',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        backgroundColor: 'lightyellow',
+    },
+    rowImgStyle: {
+        width: 50,
+        height: 50,
+    },
+    rowTextStyle:{
+        flex:1,
+        fontSize:20,
+        color:'black'
+    },  
+});

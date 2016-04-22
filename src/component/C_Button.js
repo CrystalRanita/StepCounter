@@ -39,7 +39,6 @@ onPress = () => {
     {/*ext here is deconstruction: const text = this.props.text*/}
     const { text } = this.props;
     return (
-      <View style={styles.container}>
         <TouchableOpacity
           disabled={this.state.disabled}
           style={[styles.button, this.state.disabled && styles.disabled]}
@@ -48,7 +47,6 @@ onPress = () => {
         >
           <Text style={styles.buttonText}>{this.props.text}</Text>
         </TouchableOpacity>
-      </View>
     );
   }
 }
@@ -58,22 +56,21 @@ const styles = StyleSheet.create({
     backgroundColor: 'gray',
   },
   button:{
-    height: 80,
-    width:280,
+    height: 50,
+    width:200,
     borderRadius: 40,
     backgroundColor: '#808000',
     justifyContent:'center',
     overflow: 'hidden',
+    borderWidth: 1,
+    borderRadius: 8,
+    alignSelf: 'stretch',
+    marginBottom: 5,
+    marginTop: 5,
   },
   buttonText:{
     textAlign: 'center',
     color: 'white',
     fontSize: 20,
-  },
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
   },
 });
