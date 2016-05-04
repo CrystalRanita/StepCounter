@@ -120,6 +120,11 @@ android {
                 output.versionCodeOverride =
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
+            output.outputFile = new File(
+                output.outputFile.parent,
+                output.outputFile.name.replace(".apk", "-${variant.versionName}.apk")
+            )
+            output.outputFile= file("$project.buildDir/outputs/apk/unsigned_stepCounter-${variant.name}.apk")
         }
     }
     adbOptions {

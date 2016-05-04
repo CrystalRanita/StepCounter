@@ -28,14 +28,18 @@ import java.util.Date;
 */
 
 public class CaptureAndroid extends ReactContextBaseJavaModule {
-
+    public static final String REACT_CLASS = "CaptureAndroid";
+    private AdaptivAndroid mSensorRecord = null;
+    private ReactApplicationContext mReactContext;
+    
     public CaptureAndroid(ReactApplicationContext reactContext) {
         super(reactContext);
+        mReactContext = reactContext;
     }
 
     @Override
     public String getName() {
-        return "CaptureAndroid";
+        return REACT_CLASS;
     }
 
     @ReactMethod
@@ -49,5 +53,32 @@ public class CaptureAndroid extends ReactContextBaseJavaModule {
             //errorMsgCallback.invoke(e.getMessage());
             e.printStackTrace();
         }
+    }//End show
+
+    @ReactMethod
+    public void StepCount(boolean stopped) {
+        if (mSensorRecord == null)
+            mSensorRecord = new AdaptivAndroid(mReactContext);
+        mSensorRecord.BtnPressEvent(stopped);
+    }
+
+    @ReactMethod
+    public void startSensorCounter(int delay) {
+        if (mSensorRecord == null)
+            mSensorRecord = new AdaptivAndroid(mReactContext);
+        mSensorRecord.start(delay);
+    }
+
+    @ReactMethod
+    public void stopSensorCounter() {
+        if (mSensorRecord == null)
+            mSensorRecord.stop();
+    }
+
+    @ReactMethod
+    public void setBPM_Value(int value) {
+        if (mSensorRecord == null)
+            mSensorRecord = new AdaptivAndroid(mReactContext);
+        mSensorRecord.setBPM_ValueFromUI(value);            
     }
 }
