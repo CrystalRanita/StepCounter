@@ -24,29 +24,16 @@ export default class StartPageComponent extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.title}>Adaptiv</Text>
-                <Text> Called With ID: {this.query.id} </Text>
-                <Button text="Get Sensor Data" onPress={
+                <Text style={styles.title}>Press NEXT</Text>
+                <Button text="NEXT" onPress={
                     this.goToPage.bind(this)
                 }/>
-                <Button text="Pass Data Test" onPress={() => {
-                    AdaptivCapture.show(
-                        width,
-                        height,
-                        (width, height) => {
-                            alert('result' +  width +  height);
-                        }
-                    )
-                }}/>
             </View>
         );
     }
 
     goToPage() {
       this.props.nav.push('/SensorDataPage/');
-    }
-
-    get query() {
-      return (this.state || {}).query || {};
     }
 }
 
@@ -56,12 +43,11 @@ var styles = StyleSheet.create({
     backgroundColor: 'lightyellow',
     width: width,
     height: height,
-    marginLeft: 10,
   },
   title: {
-    fontSize: 20,
+    fontSize: width/15,
     textAlign: 'center',
-    margin: 10,
+    margin: 5,
     padding:0,
   },
 });

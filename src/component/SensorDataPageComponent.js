@@ -39,10 +39,11 @@ export default class SensorDataPageComponent extends Component {
         return (
           <ScrollView style={styles.container}>
             <Text style={styles.title}>Sensor Data</Text>
-            <ButtonStepCount StartText="Start a New Capture" StopText="Stop Capture" onPress={() => {
+            <ButtonStepCount StartText="START" StopText="STOP" onPress={() => {
             }}/>
 
             <View style={styles.dataStyle}>
+                <Text style={styles.bpm_text_style}>BPM: </Text>
                 <TextSensor type="bpm"></TextSensor>
             </View>
 
@@ -65,23 +66,25 @@ export default class SensorDataPageComponent extends Component {
                 <Image style={styles.rowImgStyle} source={IMG_LIST[3]} />
                 <TextSensor type="steps"></TextSensor>
             </View>
-
-            <View style={styles.dataStyle}>
-                <Image style={styles.rowImgStyle} source={IMG_LIST[4]} />
-                <TextSensor type="gps_status"></TextSensor>
-            </View>
-
-            <View style={styles.dataStyle}>
-            </View>
-            <Button text="Back to Start Page!" onPress={
-              this.goBack.bind(this)
+            
+            <Button text="SETTINGS" onPress={
+                this.goToSettingsPage.bind(this)
             }/>
+
+            <Button text="BACK" onPress={
+                this.goBack.bind(this)
+            }/>
+
           </ScrollView>
         );
     }
 
     goBack() {
         this.props.nav.pop();   
+    }
+
+    goToSettingsPage() {
+        this.props.nav.push('/SettingsPage/');
     }
 }
 
@@ -91,12 +94,10 @@ var styles = StyleSheet.create({
         backgroundColor: 'lightyellow',
         width: width,
         height: height,
-        marginLeft: 10,
     },
     title: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
+        fontSize: width/15,
+        marginLeft: (3*width)/8,
     },
     dataStyle: {
         flexDirection: 'row',
@@ -104,7 +105,13 @@ var styles = StyleSheet.create({
         backgroundColor: 'lightyellow',
     },
     rowImgStyle: {
-        width: 50,
-        height: 50,
+        width: width/12,
+        height: width/12,
+        marginLeft: width/8,
+    },
+    bpm_text_style: {
+        fontSize: width/15,
+        marginLeft: width/8,
+        color: 'orangered',
     },
 });

@@ -10,7 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.hardware.*;
-import android.location.LocationManager;
+//import android.location.LocationManager;
 import android.media.AudioManager;
 import android.media.ToneGenerator;
 import android.os.Bundle;
@@ -46,9 +46,9 @@ public class AdaptivAndroid implements SensorEventListener {
     private Sensor grav;
     private Sensor step;
 
-    private LocationManager locationManager;
+    //private LocationManager locationManager;
 
-    private GPSListener gpsListener;
+    //private GPSListener gpsListener;
 
     private FileIO accelFile;
     private FileIO gyroFile;
@@ -89,8 +89,8 @@ public class AdaptivAndroid implements SensorEventListener {
     public AdaptivAndroid(ReactApplicationContext reactContext) {
         sensorManager = (SensorManager)reactContext.getSystemService(reactContext.SENSOR_SERVICE);
         mReactContext = reactContext;
-        locationManager = (LocationManager) reactContext.getSystemService(reactContext.LOCATION_SERVICE);
-        gpsListener = new GPSListener(reactContext);
+        //locationManager = (LocationManager) reactContext.getSystemService(reactContext.LOCATION_SERVICE);
+        //gpsListener = new GPSListener(reactContext);
     }
 
     public void start(int delay) {
@@ -306,11 +306,13 @@ public class AdaptivAndroid implements SensorEventListener {
         String stepTitle = "Timestamp, steps, mTestBPM";
         stepFile.writeLine(stepTitle); 
 
+        /*
         Log.e("INFO", "Get location data...");
         if(locationManager.getAllProviders().size()!=0) {
             Log.e("INFO", "Get location data...");
             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 2, gpsListener);
         }
+        */
     }
 
     private void onCaptureStopped() {
@@ -328,11 +330,12 @@ public class AdaptivAndroid implements SensorEventListener {
         laFile.close();
         gravFile.close();
         stepFile.close();
-
+/*
         if (locationManager.getAllProviders().size()!=0) {
             gpsListener.closeFile();
             locationManager.removeUpdates(gpsListener);
         }
+        */
         mTestBPM=90;//Set default value whie capture stopped
         setBPM_ValueFromUI(mTestBPM);
         Log.e("INFO", "After reset mTestBPM= " + mTestBPM);

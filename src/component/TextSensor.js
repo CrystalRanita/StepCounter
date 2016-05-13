@@ -8,9 +8,12 @@ import React, {
     Text,
     InteractionManager,
     DeviceEventEmitter,
+    Dimensions,
 } from 'react-native';
 
 var AdaptivCapture = require('./../../lib/components/AdaptivAndroid/AdaptivCapture.android.js');
+var width = Dimensions.get('window').width; //full width
+var height = Dimensions.get('window').height; //full height
 
 export default class TextSensor extends Component {
 
@@ -98,8 +101,8 @@ export default class TextSensor extends Component {
 
 const styles = StyleSheet.create({
     textStyle: {
-        fontSize: 20,
+        fontSize: width/20,
         textAlign: 'center',
-        margin: 10,
+        marginLeft: (width)/16,
     },
 });

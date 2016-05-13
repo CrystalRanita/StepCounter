@@ -45,7 +45,7 @@ export default class BPM_Settings extends Component {
       this.state = {
           modalVisible: this.props.flag_modalVisible,
           transparent: false,
-          bpmValue: 0,
+          bpmValue: 90,
       };
     }
 

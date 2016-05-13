@@ -3,15 +3,17 @@
  */
 
 import React, {
-  Component,
-  StyleSheet,
-  Text,
-  View,
-  TouchableOpacity,
+    Component,
+    StyleSheet,
+    Text,
+    View,
+    TouchableOpacity,
+    Dimensions,
 } from 'react-native';
 
 var AdaptivCapture = require('./../../lib/components/AdaptivAndroid/AdaptivCapture.android.js');
-
+var width = Dimensions.get('window').width; //full width
+var height = Dimensions.get('window').height; //full height
 export default class ButtonStepCount extends Component {
     constructor(props){
         super(props);
@@ -59,16 +61,13 @@ export default class ButtonStepCount extends Component {
 
 const styles = StyleSheet.create({
     button:{
-        height: 50,
-        width:200,
-        borderRadius: 40,
+        height: width/4,
+        width: width/4,
+        borderRadius: width/2,
         justifyContent:'center',
         overflow: 'hidden',
-        borderWidth: 1,
-        borderRadius: 8,
-        alignSelf: 'stretch',
-        marginBottom: 5,
-        marginTop: 5,
+        marginLeft: (3*width)/8,
+        marginTop: width/32,
     },
     onButtonStop:{
         borderColor: 'gold',
@@ -81,6 +80,6 @@ const styles = StyleSheet.create({
     buttonText:{
         textAlign: 'center',
         color: 'black',
-        fontSize: 20,
+        fontSize: width/15,
     },
 });

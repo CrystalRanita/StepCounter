@@ -1,5 +1,6 @@
 import SensorDataPageComponent from './SensorDataPageComponent';
 import StartPageComponent from './StartPageComponent';
+import SettingsPageComponent from './SettingsPageComponent';
 
 import React, {
     Component,
@@ -47,10 +48,11 @@ export default class PageControl extends Component {
     //Sensor Data Page
     router.addRoute( 'SensorDataPage', '/SensorDataPage/', SensorDataPageComponent, {
       defaultAnimation: Navigator.SceneConfigs.FloatFromRight,
-      props: {
-        name: 'Ranita',
-        didPressButton: () => alert('Action from my app!')
-      }
+    });
+
+    //Settings Page
+    router.addRoute( 'SettingsPage', '/SettingsPage/', SettingsPageComponent, {
+      defaultAnimation: Navigator.SceneConfigs.FloatFromRight,
     });
   }
 }

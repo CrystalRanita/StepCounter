@@ -8,7 +8,11 @@ import React, {
   Text,
   View,
   TouchableOpacity,
+  Dimensions,
 } from 'react-native';
+
+var width = Dimensions.get('window').width; //full width
+var height = Dimensions.get('window').height; //full height
 
 export default class Button extends Component {
   constructor(props){
@@ -56,21 +60,18 @@ const styles = StyleSheet.create({
     backgroundColor: 'gray',
   },
   button:{
-    height: 50,
-    width:200,
-    borderRadius: 40,
-    backgroundColor: '#808000',
+    height: width/4,
+    width: width/4,
+    borderRadius: width/2,
+    backgroundColor: 'turquoise',
     justifyContent:'center',
     overflow: 'hidden',
-    borderWidth: 1,
-    borderRadius: 8,
-    alignSelf: 'stretch',
-    marginBottom: 5,
-    marginTop: 5,
+    marginLeft: (3*width)/8,
+    marginTop: width/32,
   },
   buttonText:{
     textAlign: 'center',
     color: 'white',
-    fontSize: 20,
+    fontSize: width/20,
   },
 });

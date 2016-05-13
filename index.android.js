@@ -2,7 +2,6 @@
  * Sample React Native App
  * https://github.com/facebook/react-native
  */
-import Toolbar_Android from './src/component/Toolbar_Android';
 import PageControl from './src/component/PageControl';
 
 import React, {
@@ -11,8 +10,11 @@ import React, {
   StyleSheet,
   Text,
   View,
+  Dimensions,
 } from 'react-native';
 
+var width = Dimensions.get('window').width; //full width
+var height = Dimensions.get('window').height; //full height
 class StepCounter extends Component {
     constructor(props) {
         super(props);
@@ -21,7 +23,6 @@ class StepCounter extends Component {
     render() {
       return (
           <View style={styles.containerMain}>
-              <Toolbar_Android></Toolbar_Android>
               <PageControl></PageControl>
           </View>
       );
@@ -32,6 +33,8 @@ const styles = StyleSheet.create({
     containerMain: {
       flex: 1,
       backgroundColor: 'lightyellow',
+      width: width,
+      height: height,
     },
     textTitle:{
       fontSize: 40,
